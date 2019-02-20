@@ -1,0 +1,245 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+div, p, input, button, a {
+	box-sizing: border-box;
+}
+
+p {
+    margin-top: 0.5em;
+    margin-bottom: 1.6em;
+	line-height: 1.38em;
+}
+.container{
+	width: 70%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header{
+	height: 100vh;
+	background: url(../img/bg.png) center top no-repeat / cover;
+	color: #fff;
+}
+.logo{
+	padding-top: 5vh;
+}
+header h1{
+	font-weight: 300;
+	font-size: 45px;
+	margin-top: 30vh;
+}
+.header__desc{
+	font-size: 13px;
+	width: 35vw;
+}
+.phone{
+	position: relative;
+	top: 100vh;
+	margin-top: -880px;
+	left: 100%;
+	margin-left: -600px;
+	}
+h2{
+	color: #000;
+	font-weight: 300;
+	font-size: 26px;
+	margin-top: 110px;
+}
+.column p{
+	color: #959595;
+	font-size: 12px;
+}
+.news__desc{
+	width: 100%;
+	display: flex;
+}
+.column{
+	width: 50%;
+
+}
+.block{
+	width: 100%;
+	height: 560px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
+	color: #fff;
+}
+.line{
+	height: 50%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+}
+.sq{
+	width: 33.33%;
+	padding: 50px 50px 50px 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.tit{
+	font-weight: 300;
+	font-size: 33px;
+}
+.sq__desc{
+	font-size: 12px;
+	font-weight: 400;
+}
+.bot{
+	font-size: 13px;
+	font-weight: 400;
+}
+.sq:first-child{
+	background: #f5989d;
+}
+.line:first-child >.sq:nth-child(2){
+	background: #615f7d;
+}
+.line:first-child >.sq:nth-child(3){
+	background: url(../img/icon2.png) center top no-repeat / cover;
+}
+
+.sq2{
+	width: 66.67%;
+	
+	
+	position: relative;
+}
+.front, .back{
+	position: absolute;
+	width: 100%;	
+	height: 100%;	
+	left: 0;
+	top: 0;
+	padding: 50px 300px 50px 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+	backface-visibility: hidden;
+	transition: 1s;
+}
+.front{
+	background: url(../img/icon1.png) top center no-repeat / cover;
+}
+.back{
+	transform: rotateY(180deg);
+	background: #091e28;
+	
+}
+.sq2:hover .front{transform: rotateY(180deg);}
+.sq2:hover .back{transform: rotateY(360deg);}
+.line:nth-child(2) >.sq{
+	background: #82ca9c;
+}
+.details{
+	padding-top: 0px;
+	padding-bottom: 150px;
+}
+.details__desc{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+}
+.det{
+	width: 25%;	
+	padding-right: 30px;
+	text-align: left;
+}
+.det p {
+	color: #959595;
+	font-size: 12px;
+}
+.power{
+	height: 100vh;
+	background: url(../img/bg2.png) no-repeat center top / cover;
+	color: #fff;
+}
+h1{
+	font-weight: 300;
+	font-size: 45px;
+}
+.power h1{
+	padding-top: 45vh;
+}
+.power p {
+	width: 430px;	
+	font-size: 12px;
+}
+.reasort{
+	background-color: #82ca9c;
+	color: #fff;
+}
+.reasort h2{
+	margin-top: 0px;
+	padding-top: 110px;	
+	color: #fff;
+}
+.reasort p{
+ color: #fff;
+}
+.reasort .det{
+	width: 33%;	
+}
+
+.scrollup{
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #091e28;
+	color: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	cursor: pointer;
+	box-shadow: 0 3px 20px rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,.4), 0 2px 0 rgba(0,0,0,.1), inset 0 0 20px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,.4), 0 2px 0 rgba(0,0,0,.1), inset 0 0 20px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,.4), 0 2px 0 rgba(0,0,0,.1), inset 0 0 20px rgba(0,0,0,.1);
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 20px;
+	display: none;
+	text-align: center;
+	
+	
+}
