@@ -1,0 +1,1 @@
+importScripts("https://truefunnygithubio.push.world/https.serviceworker.js");
